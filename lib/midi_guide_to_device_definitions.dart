@@ -6,12 +6,12 @@ import 'package:instrument_definition_converter/midi_guide_models.dart';
 import 'package:instrument_definition_converter/naming.dart';
 
 class MidiGuideToDeviceDefinitions {
-  static Future<DeviceDefinition> convert(String path) async {
-    final manufacturer = _getManufacturer(path);
-    final deviceName = _getDeviceName(path);
 
-    final parameters = await parseCsv(path);
-
+  static DeviceDefinition convert(
+    List<MidiGuideParameter> parameters,
+    String manufacturer,
+    String deviceName,
+  ) {
     final List<DeviceParameter> deviceParameters = [];
     for (final parameter in parameters) {
       try {
@@ -33,23 +33,7 @@ class MidiGuideToDeviceDefinitions {
     return deviceDefinition;
   }
 
-  static String _getManufacturer(String path) {
-    final parts = path.split('/');
-    if (parts.length < 2) {
-      return '';
-    }
-    return parts[parts.length - 2];
-  }
-
-  static String _getDeviceName(String path) {
-    final parts = path.split('/');
-    if (parts.isEmpty) {
-      return '';
-    }
-    return parts.last.split('.').first;
-  }
-
-  static Future<List<MidiGuideParameter>> parseCsv(String path) async {
+  static Future<List<MidiGuideParameter>> readParametersFromCSV(String path) async {
     final string = await File(path).readAsString();
     final converter = CsvToListConverter(eol: '\n');
     final csv = converter.convert(string);

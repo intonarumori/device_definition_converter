@@ -30,7 +30,16 @@ void main(List<String> args) async {
     try {
       if (!isDevicePath(path)) continue;
 
-      final deviceDefinition = await MidiGuideToDeviceDefinitions.convert(path);
+      final manufacturer = _getManufacturer(path);
+      final deviceName = _getDeviceName(path);
+
+      final parameters = await MidiGuideToDeviceDefinitions.readParametersFromCSV(path);
+
+      final deviceDefinition = await MidiGuideToDeviceDefinitions.convert(
+        parameters,
+        manufacturer,
+        deviceName,
+      );
 
       final map = DeviceDefinitionSerializer.toMap(deviceDefinition);
       final filename = '${deviceDefinition.id}.json';
@@ -54,6 +63,22 @@ void main(List<String> args) async {
   await File(devicesOutputPath).writeAsString(jsonEncode(devicesMap));
 
   //print('Dict ${dictionary.length} words ${dictionary.toList()..sort((a, b) => a.compareTo(b))}');
+}
+
+String _getManufacturer(String path) {
+  final parts = path.split('/');
+  if (parts.length < 2) {
+    return '';
+  }
+  return parts[parts.length - 2];
+}
+
+String _getDeviceName(String path) {
+  final parts = path.split('/');
+  if (parts.isEmpty) {
+    return '';
+  }
+  return parts.last.split('.').first;
 }
 
 bool isDevicePath(String path) {
