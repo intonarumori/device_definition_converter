@@ -1,0 +1,21 @@
+name: instrument_definition_converter
+description: "A new Flutter package project."
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ^3.6.0
+  flutter: ">=1.17.0"
+
+dependencies:
+  args: ^2.6.0
+  csv: ^6.0.0
+  json_deserializer:
+
+dev_dependencies:
+
+dependency_overrides:
+  json_deserializer:
+    git:
+      url: https://github.com/intonarumori/json_deserializer.git
+      ref: f76ed0040b56827d8f68ca38060b3bf3f96a45f2

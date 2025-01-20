@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "instrument_definition_converter",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/instrument_definition_converter.dart",
+            "args": [
+                "--input",
+                "assets",
+                "--output",
+                "output",
+            ],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
