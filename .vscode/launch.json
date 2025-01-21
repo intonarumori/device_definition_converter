@@ -5,7 +5,7 @@
             "name": "instrument_definition_converter",
             "request": "launch",
             "type": "dart",
-            "program": "lib/instrument_definition_converter.dart",
+            "program": "bin/convert_midi_guide_instruments.dart",
             "args": [
                 "--input",
                 "assets",

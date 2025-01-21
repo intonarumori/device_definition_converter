@@ -1,10 +1,9 @@
 import 'package:csv/csv.dart';
-import 'package:instrument_definition_converter/device_definition.dart';
-import 'package:instrument_definition_converter/midi_guide_models.dart';
-import 'package:instrument_definition_converter/naming.dart';
+import 'package:instrument_definition_converter/src/device_definition.dart';
+import 'package:instrument_definition_converter/src/midi_guide_models.dart';
+import 'package:instrument_definition_converter/src/naming.dart';
 
 class MidiGuideToDeviceDefinitions {
-
   static DeviceDefinition convert(
     List<MidiGuideParameter> parameters,
     String manufacturer,
