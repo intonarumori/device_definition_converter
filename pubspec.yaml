@@ -10,5 +10,6 @@ dependencies:
   args: ^2.6.0
   csv: ^6.0.0
 
-dev_dependencies:
+executables:
+  convert_midi_guide_instruments:
 
