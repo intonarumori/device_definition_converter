@@ -1,4 +1,4 @@
-import 'package:instrument_definition_converter/src/abbreviation_lookup.dart';
+import 'abbreviation_lookup.dart';
 
 class Naming {
   static String createId(String name) {

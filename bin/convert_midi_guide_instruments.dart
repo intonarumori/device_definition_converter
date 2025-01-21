@@ -2,9 +2,9 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:args/args.dart';
-import 'package:instrument_definition_converter/src/device_definition_serializer.dart';
-import 'package:instrument_definition_converter/src/device_entry.dart';
-import 'package:instrument_definition_converter/src/midi_guide_to_device_definitions.dart';
+import 'package:device_definition_converter/src/device_definition_serializer.dart';
+import 'package:device_definition_converter/src/device_entry.dart';
+import 'package:device_definition_converter/src/midi_guide_to_device_definitions.dart';
 
 void main(List<String> args) async {
   final parser = ArgParser()

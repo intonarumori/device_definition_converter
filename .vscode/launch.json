@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "instrument_definition_converter",
+            "name": "device_definition_converter",
             "request": "launch",
             "type": "dart",
             "program": "bin/convert_midi_guide_instruments.dart",

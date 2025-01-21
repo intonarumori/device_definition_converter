@@ -1,6 +1,6 @@
 // import 'package:flutter_test/flutter_test.dart';
 
-// import 'package:instrument_definition_converter/instrument_definition_converter.dart';
+// import 'package:device_definition_converter/device_definition_converter.dart';
 
 // void main() {
 //   test('adds one to input values', () {

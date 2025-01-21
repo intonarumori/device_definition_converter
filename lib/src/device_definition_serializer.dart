@@ -1,4 +1,4 @@
-import 'package:instrument_definition_converter/src/device_definition.dart';
+import 'package:device_definition_converter/src/device_definition.dart';
 
 extension DeviceDefinitionSerializer on DeviceDefinition {
   static Map<String, dynamic> toMap(DeviceDefinition deviceDefinition) {

@@ -1,7 +1,7 @@
 import 'package:csv/csv.dart';
-import 'package:instrument_definition_converter/src/device_definition.dart';
-import 'package:instrument_definition_converter/src/midi_guide_models.dart';
-import 'package:instrument_definition_converter/src/naming.dart';
+import 'device_definition.dart';
+import 'midi_guide_models.dart';
+import 'naming.dart';
 
 class MidiGuideToDeviceDefinitions {
   static DeviceDefinition convert(

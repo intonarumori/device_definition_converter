@@ -1,5 +1,5 @@
-name: instrument_definition_converter
-description: "A new Flutter package project."
+name: device_definition_converter
+description: "Utility package to convert to OXI device definition"
 version: 0.0.1
 homepage:
 
