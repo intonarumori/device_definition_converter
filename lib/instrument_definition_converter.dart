@@ -21,36 +21,19 @@ void main(List<String> args) async {
   if (!await Directory(output).exists()) {
     throw ArgumentError('Output directory does not exist');
   }
+  _convertDevices(input, output);
+}
 
-  final paths = await collectPaths(Directory(input));
+Future<void> _convertDevices(String input, String output) async {
+  final paths = await _collectPaths(Directory(input));
 
   final List<DeviceEntry> devices = [];
 
   for (final path in paths) {
     try {
-      if (!isDevicePath(path)) continue;
-
-      final manufacturer = _getManufacturer(path);
-      final deviceName = _getDeviceName(path);
-
-      final parameters = await MidiGuideToDeviceDefinitions.readParametersFromCSV(path);
-
-      final deviceDefinition = await MidiGuideToDeviceDefinitions.convert(
-        parameters,
-        manufacturer,
-        deviceName,
-      );
-
-      final map = DeviceDefinitionSerializer.toMap(deviceDefinition);
-      final filename = '${deviceDefinition.id}.json';
-      final outputPath = '$output/$filename';
-      await File(outputPath).writeAsString(jsonEncode(map));
-
-      devices.add(DeviceEntry(
-        manufacturer: deviceDefinition.manufacturer,
-        model: deviceDefinition.name,
-        file: filename,
-      ));
+      if (!_isDevicePath(path)) continue;
+      final deviceEntry = await _convertDevice(path, output);
+      devices.add(deviceEntry);
     } catch (e) {
       print('Malformatted csv file: $path');
     }
@@ -61,9 +44,35 @@ void main(List<String> args) async {
   final devicesFilename = 'devices.json';
   final devicesOutputPath = '$output/$devicesFilename';
   await File(devicesOutputPath).writeAsString(jsonEncode(devicesMap));
-
-  //print('Dict ${dictionary.length} words ${dictionary.toList()..sort((a, b) => a.compareTo(b))}');
 }
+
+Future<DeviceEntry> _convertDevice(String input, String output) async {
+  final manufacturer = _getManufacturer(input);
+  final deviceName = _getDeviceName(input);
+
+  final string = await File(input).readAsString();
+  final parameters = await MidiGuideToDeviceDefinitions.readParametersFromCSV(string);
+
+  final deviceDefinition = await MidiGuideToDeviceDefinitions.convert(
+    parameters,
+    manufacturer,
+    deviceName,
+  );
+
+  // Write device
+  final map = DeviceDefinitionSerializer.toMap(deviceDefinition);
+  final filename = '${deviceDefinition.id}.json';
+  final outputPath = '$output/$filename';
+  await File(outputPath).writeAsString(jsonEncode(map));
+
+  return DeviceEntry(
+    manufacturer: deviceDefinition.manufacturer,
+    model: deviceDefinition.name,
+    file: filename,
+  );
+}
+
+// Helpers
 
 String _getManufacturer(String path) {
   final parts = path.split('/');
@@ -81,12 +90,12 @@ String _getDeviceName(String path) {
   return parts.last.split('.').first;
 }
 
-bool isDevicePath(String path) {
+bool _isDevicePath(String path) {
   // Only consider the right depth for folders
   return path.split('/').length >= 3;
 }
 
-Future<List<String>> collectPaths(Directory directory) async {
+Future<List<String>> _collectPaths(Directory directory) async {
   final List<String> paths = [];
 
   final files = await directory.list().toList();
@@ -94,7 +103,7 @@ Future<List<String>> collectPaths(Directory directory) async {
     if (file is File && file.path.endsWith('.csv')) {
       paths.add(file.path);
     } else if (file is Directory) {
-      paths.addAll(await collectPaths(file));
+      paths.addAll(await _collectPaths(file));
     }
   }
 

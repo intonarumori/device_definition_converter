@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:csv/csv.dart';
 import 'package:instrument_definition_converter/device_definition.dart';
 import 'package:instrument_definition_converter/midi_guide_models.dart';
@@ -33,10 +31,9 @@ class MidiGuideToDeviceDefinitions {
     return deviceDefinition;
   }
 
-  static Future<List<MidiGuideParameter>> readParametersFromCSV(String path) async {
-    final string = await File(path).readAsString();
+  static Future<List<MidiGuideParameter>> readParametersFromCSV(String data) async {
     final converter = CsvToListConverter(eol: '\n');
-    final csv = converter.convert(string);
+    final csv = converter.convert(data);
     final result = csv.sublist(1).map((e) => MidiGuideParameter.fromList(e)).toList();
     return result;
   }
