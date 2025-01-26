@@ -57,8 +57,8 @@ class MidiGuideToDeviceDefinitions {
           abbr: Naming.createAbbreviation(parameter.parameterName),
           minimum: parameter.ccMinValue ?? 0,
           maximum: parameter.ccMaxValue ?? 127,
-          nr1: parameter.ccLsb,
-          nr2: parameter.ccMsb,
+          nr1: parameter.ccMsb,
+          nr2: 0,
           defaultValue: 0,
         );
       }
