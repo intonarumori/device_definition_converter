@@ -35,7 +35,7 @@ class DeviceDefinition {
     );
   }
 
-  copyWith({
+  DeviceDefinition copyWith({
     String? id,
     String? name,
     String? abbr,
@@ -52,6 +52,8 @@ class DeviceDefinition {
       script: script ?? this.script,
     );
   }
+
+  String get fullName => '$manufacturer - $name';
 }
 
 enum DeviceParameterControlType {
