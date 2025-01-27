@@ -22,7 +22,7 @@ class MidiGuideToDeviceDefinitions {
     final deviceDefinition = DeviceDefinition(
       id: Naming.createId('${manufacturer}_$deviceName'),
       name: deviceName,
-      abbr: Naming.abbreviatedName(manufacturer),
+      abbr: Naming.abbreviatedName('${manufacturer} $deviceName'),
       manufacturer: manufacturer,
       parameters: deviceParameters,
       script: null,
