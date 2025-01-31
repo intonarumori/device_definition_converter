@@ -6,7 +6,7 @@ import 'naming.dart';
 class MidiGuideToDeviceDefinitions {
   static DeviceDefinition convert(
     List<MidiGuideParameter> parameters,
-    String manufacturer,
+    String? manufacturer,
     String deviceName,
   ) {
     final List<DeviceParameter> deviceParameters = [];
@@ -23,7 +23,7 @@ class MidiGuideToDeviceDefinitions {
       id: Naming.createId('${manufacturer}_$deviceName'),
       name: deviceName,
       abbr: Naming.abbreviatedName('${manufacturer} $deviceName'),
-      manufacturer: manufacturer,
+      manufacturer: manufacturer ?? '',
       parameters: deviceParameters,
       script: null,
     );
