@@ -35,7 +35,6 @@ class MidiGuideToDeviceDefinitions {
     final csv = converter.convert(data);
     final header = csv[0].cast<String>();
     final dataRows = csv.sublist(1);
-    assert(header.length == dataRows[0].length);
     final result = dataRows.map((e) => MidiGuideParameter.fromList(header, e)).toList();
     return result;
   }
