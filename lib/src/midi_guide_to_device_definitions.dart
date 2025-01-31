@@ -15,7 +15,7 @@ class MidiGuideToDeviceDefinitions {
         final deviceParameter = createDeviceParameter(parameter);
         deviceParameters.add(deviceParameter);
       } catch (e) {
-        print('Error creating parameter: ${parameter.parameterName}');
+        print('Error creating parameter: ${manufacturer} ${deviceName} ${parameter.parameterName}');
       }
     }
 
@@ -33,7 +33,10 @@ class MidiGuideToDeviceDefinitions {
   static Future<List<MidiGuideParameter>> readParametersFromCSV(String data) async {
     final converter = CsvToListConverter(eol: '\n');
     final csv = converter.convert(data);
-    final result = csv.sublist(1).map((e) => MidiGuideParameter.fromList(e)).toList();
+    final header = csv[0].cast<String>();
+    final dataRows = csv.sublist(1);
+    assert(header.length == dataRows[0].length);
+    final result = dataRows.map((e) => MidiGuideParameter.fromList(header, e)).toList();
     return result;
   }
 
@@ -43,7 +46,7 @@ class MidiGuideToDeviceDefinitions {
         return DeviceParameter(
           type: DeviceParameterControlType.cc14,
           name: parameter.parameterName,
-          abbr: Naming.createAbbreviation(parameter.parameterName),
+          abbr: parameter.abbreviation ?? Naming.createAbbreviation(parameter.parameterName),
           minimum: parameter.ccMinValue ?? 0,
           maximum: parameter.ccMaxValue ?? 16383,
           nr1: parameter.ccLsb,
