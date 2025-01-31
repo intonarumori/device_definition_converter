@@ -56,7 +56,7 @@ class MidiGuideToDeviceDefinitions {
         return DeviceParameter(
           type: DeviceParameterControlType.cc,
           name: parameter.parameterName,
-          abbr: Naming.createAbbreviation(parameter.parameterName),
+          abbr: parameter.abbreviation ?? Naming.createAbbreviation(parameter.parameterName),
           minimum: parameter.ccMinValue ?? 0,
           maximum: parameter.ccMaxValue ?? 127,
           nr1: parameter.ccMsb,
@@ -69,7 +69,7 @@ class MidiGuideToDeviceDefinitions {
       return DeviceParameter(
         type: DeviceParameterControlType.nrpn,
         name: parameter.parameterName,
-        abbr: Naming.createAbbreviation(parameter.parameterName),
+        abbr: parameter.abbreviation ?? Naming.createAbbreviation(parameter.parameterName),
         minimum: parameter.nrpnMinValue ?? 0,
         maximum: parameter.nrpnMaxValue ?? 127,
         nr1: parameter.nrpnLsb,
