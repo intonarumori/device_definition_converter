@@ -1,42 +1,42 @@
 manufacturer,device,section,parameter_name,parameter_description,cc_msb,cc_lsb,cc_min_value,cc_max_value,nrpn_msb,nrpn_lsb,nrpn_min_value,nrpn_max_value,orientation,notes,usage,abbreviation
-Arturia,Minifreak,,MOD Wheel,,1,,0,127,,,,,0-based,,MWh
-Arturia,Minifreak,,Sustain Pedal,,64,,0,127,,,,,0-based,,Sust
-Arturia,Minifreak,,Glide,,5,,0,127,,,,,0-based,,Glde
-Arturia,Minifreak,,Tune1,,70,,0,127,,,,,0-based,,Tne1
-Arturia,Minifreak,,Wave1,,14,,0,127,,,,,0-based,,Wav1
-Arturia,Minifreak,,Timbre1,,15,,0,127,,,,,0-based,,Tim1
-Arturia,Minifreak,,Shape1,,16,,0,127,,,,,0-based,,Sha1
-Arturia,Minifreak,,Volume1,,17,,0,127,,,,,0-based,,Vol1
-Arturia,Minifreak,,Tune2,,73,,0,127,,,,,0-based,,Tne2
-Arturia,Minifreak,,Wave2,,18,,0,127,,,,,0-based,,Wav2
-Arturia,Minifreak,,Timbre2,,19,,0,127,,,,,0-based,,Tim2
-Arturia,Minifreak,,Shape2,,20,,0,127,,,,,0-based,,Sha2
-Arturia,Minifreak,,Volume2,,21,,0,127,,,,,0-based,,Vol2
-Arturia,Minifreak,,Filter Cutoff,,74,,0,127,,,,,0-based,,Cut
-Arturia,Minifreak,,Resonance,,71,,0,127,,,,,0-based,,Res
-Arturia,Minifreak,,VCF ENV Amount,,24,,0,127,,,,,0-based,,EnvA
-Arturia,Minifreak,,Velocity Envelope MOD,,94,,0,127,,,,,0-based,,VEnv
-Arturia,Minifreak,,CYC ENV Rise Shape,,68,,0,127,,,,,0-based,,ERSh
-Arturia,Minifreak,,CYC ENV Rise,,76,,0,127,,,,,0-based,,ERRi
-Arturia,Minifreak,,CYC ENV Fall,,77,,0,127,,,,,0-based,,EFll
-Arturia,Minifreak,,CYC ENV Hold,,78,,0,127,,,,,0-based,,EHld
-Arturia,Minifreak,,CYC ENV Fall Shape,,69,,0,127,,,,,0-based,,EFSh
-Arturia,Minifreak,,ENV Attack,,80,,0,127,,,,,0-based,,Att
-Arturia,Minifreak,,ENV Decay,,81,,0,127,,,,,0-based,,Dec
-Arturia,Minifreak,,ENV Sustain,,82,,0,127,,,,,0-based,,Sus
-Arturia,Minifreak,,ENV Release,,83,,0,127,,,,,0-based,,Rel
-Arturia,Minifreak,,LFO1 Rate,,85,,0,127,,,,,0-based,,Lf1r
-Arturia,Minifreak,,LFO2 Rate,,87,,0,127,,,,,0-based,,Lf2r
-Arturia,Minifreak,,FX1 Time,,22,,0,127,,,,,0-based,,F1Tm
-Arturia,Minifreak,,FX1 Intensity,,23,,0,127,,,,,0-based,,F1In
-Arturia,Minifreak,,FX1 Amount,,25,,0,127,,,,,0-based,,F1Am
-Arturia,Minifreak,,FX2 Time,,26,,0,127,,,,,0-based,,F2Tm
-Arturia,Minifreak,,FX2 Intensity,,27,,0,127,,,,,0-based,,F2In
-Arturia,Minifreak,,FX2 Amount,,28,,0,127,,,,,0-based,,F2Am
-Arturia,Minifreak,,FX3 Time,,29,,0,127,,,,,0-based,,F3Tm
-Arturia,Minifreak,,FX3 Intensity,,30,,0,127,,,,,0-based,,F3In
-Arturia,Minifreak,,FX3 Amount,,31,,0,127,,,,,0-based,,F3Am
-Arturia,Minifreak,,SEQ Gate,,115,,0,127,,,,,0-based,,SqGt
-Arturia,Minifreak,,SEQ Spice,,116,,0,127,,,,,0-based,,SqSp
-Arturia,Minifreak,,Macro1,,117,,0,127,,,,,0-based,,Mac1
-Arturia,Minifreak,,Macro2,,118,,0,127,,,,,0-based,,Mac2
+Arturia,Minifreak,,MOD Wheel,,1,,0,127,,,,,0-based,,,MWh
+Arturia,Minifreak,,Sustain Pedal,,64,,0,127,,,,,0-based,,,Sust
+Arturia,Minifreak,,Glide,,5,,0,127,,,,,0-based,,,Glde
+Arturia,Minifreak,,Tune1,,70,,0,127,,,,,0-based,,,Tne1
+Arturia,Minifreak,,Wave1,,14,,0,127,,,,,0-based,,,Wav1
+Arturia,Minifreak,,Timbre1,,15,,0,127,,,,,0-based,,,Tim1
+Arturia,Minifreak,,Shape1,,16,,0,127,,,,,0-based,,,Sha1
+Arturia,Minifreak,,Volume1,,17,,0,127,,,,,0-based,,,Vol1
+Arturia,Minifreak,,Tune2,,73,,0,127,,,,,0-based,,,Tne2
+Arturia,Minifreak,,Wave2,,18,,0,127,,,,,0-based,,,Wav2
+Arturia,Minifreak,,Timbre2,,19,,0,127,,,,,0-based,,,Tim2
+Arturia,Minifreak,,Shape2,,20,,0,127,,,,,0-based,,,Sha2
+Arturia,Minifreak,,Volume2,,21,,0,127,,,,,0-based,,,Vol2
+Arturia,Minifreak,,Filter Cutoff,,74,,0,127,,,,,0-based,,,Cut
+Arturia,Minifreak,,Resonance,,71,,0,127,,,,,0-based,,,Res
+Arturia,Minifreak,,VCF ENV Amount,,24,,0,127,,,,,0-based,,,EnvA
+Arturia,Minifreak,,Velocity Envelope MOD,,94,,0,127,,,,,0-based,,,VEnv
+Arturia,Minifreak,,CYC ENV Rise Shape,,68,,0,127,,,,,0-based,,,ERSh
+Arturia,Minifreak,,CYC ENV Rise,,76,,0,127,,,,,0-based,,,ERRi
+Arturia,Minifreak,,CYC ENV Fall,,77,,0,127,,,,,0-based,,,EFll
+Arturia,Minifreak,,CYC ENV Hold,,78,,0,127,,,,,0-based,,,EHld
+Arturia,Minifreak,,CYC ENV Fall Shape,,69,,0,127,,,,,0-based,,,EFSh
+Arturia,Minifreak,,ENV Attack,,80,,0,127,,,,,0-based,,,Att
+Arturia,Minifreak,,ENV Decay,,81,,0,127,,,,,0-based,,,Dec
+Arturia,Minifreak,,ENV Sustain,,82,,0,127,,,,,0-based,,,Sus
+Arturia,Minifreak,,ENV Release,,83,,0,127,,,,,0-based,,,Rel
+Arturia,Minifreak,,LFO1 Rate,,85,,0,127,,,,,0-based,,,Lf1r
+Arturia,Minifreak,,LFO2 Rate,,87,,0,127,,,,,0-based,,,Lf2r
+Arturia,Minifreak,,FX1 Time,,22,,0,127,,,,,0-based,,,F1Tm
+Arturia,Minifreak,,FX1 Intensity,,23,,0,127,,,,,0-based,,,F1In
+Arturia,Minifreak,,FX1 Amount,,25,,0,127,,,,,0-based,,,F1Am
+Arturia,Minifreak,,FX2 Time,,26,,0,127,,,,,0-based,,,F2Tm
+Arturia,Minifreak,,FX2 Intensity,,27,,0,127,,,,,0-based,,,F2In
+Arturia,Minifreak,,FX2 Amount,,28,,0,127,,,,,0-based,,,F2Am
+Arturia,Minifreak,,FX3 Time,,29,,0,127,,,,,0-based,,,F3Tm
+Arturia,Minifreak,,FX3 Intensity,,30,,0,127,,,,,0-based,,,F3In
+Arturia,Minifreak,,FX3 Amount,,31,,0,127,,,,,0-based,,,F3Am
+Arturia,Minifreak,,SEQ Gate,,115,,0,127,,,,,0-based,,,SqGt
+Arturia,Minifreak,,SEQ Spice,,116,,0,127,,,,,0-based,,,SqSp
+Arturia,Minifreak,,Macro1,,117,,0,127,,,,,0-based,,,Mac1
+Arturia,Minifreak,,Macro2,,118,,0,127,,,,,0-based,,,Mac2
