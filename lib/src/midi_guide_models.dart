@@ -93,6 +93,8 @@ class MidiGuideParameter {
           //print(' null $name');
           return null;
         }
+      } else if (T == String) {
+        return d == '' ? null : d as T;
       }
       return d;
     }
