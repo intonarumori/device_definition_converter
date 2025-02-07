@@ -1,1 +1,130 @@
-{"id":"korg_volca_sample","name":"volca sample","abbr":"KVSm","manufacturer":"KORG","parameters":[{"type":"cc","name":"Level","abbr":"Lvl","minimum":0,"maximum":127,"default_value":0,"nr1":7,"nr2":0,"value_labels":[]},{"type":"cc","name":"Pan","abbr":"Pan","minimum":0,"maximum":127,"default_value":0,"nr1":10,"nr2":0,"value_labels":[]},{"type":"cc","name":"Sample start point","abbr":"SSPn","minimum":0,"maximum":127,"default_value":0,"nr1":40,"nr2":0,"value_labels":[]},{"type":"cc","name":"Sample length","abbr":"SmLn","minimum":0,"maximum":127,"default_value":0,"nr1":41,"nr2":0,"value_labels":[]},{"type":"cc","name":"Hi cutoff","abbr":"HiCt","minimum":0,"maximum":127,"default_value":0,"nr1":42,"nr2":0,"value_labels":[]},{"type":"cc","name":"Speed","abbr":"Spd","minimum":0,"maximum":127,"default_value":0,"nr1":43,"nr2":0,"value_labels":[]},{"type":"cc","name":"Pitch EG intensity","abbr":"PEIn","minimum":0,"maximum":127,"default_value":0,"nr1":44,"nr2":0,"value_labels":[]},{"type":"cc","name":"Pitch EG attack","abbr":"PEAt","minimum":0,"maximum":127,"default_value":0,"nr1":45,"nr2":0,"value_labels":[]},{"type":"cc","name":"Pitch EG decay","abbr":"PEDc","minimum":0,"maximum":127,"default_value":0,"nr1":46,"nr2":0,"value_labels":[]},{"type":"cc","name":"Amp EG attack","abbr":"AEAt","minimum":0,"maximum":127,"default_value":0,"nr1":47,"nr2":0,"value_labels":[]},{"type":"cc","name":"Amp EG decay","abbr":"AEDc","minimum":0,"maximum":127,"default_value":0,"nr1":48,"nr2":0,"value_labels":[]}],"script":null}
+{
+	"id": "korg_volca_sample",
+	"name": "volca sample",
+	"abbr": "KVSa",
+	"manufacturer": "KORG",
+	"parameters": [
+		{
+			"type": "cc",
+			"name": "Level",
+			"abbr": "Lvl",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 7,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "Pan",
+			"abbr": "Pan",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 10,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "Sample start point",
+			"abbr": "SSPo",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 40,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "Sample length",
+			"abbr": "SmLn",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 41,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "Hi cutoff",
+			"abbr": "Hicu",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 42,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "Speed",
+			"abbr": "Spd",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 43,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "Pitch EG intensity",
+			"abbr": "PEIn",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 44,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "Pitch EG attack",
+			"abbr": "PEAt",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 45,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "Pitch EG decay",
+			"abbr": "PEDe",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 46,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "Amp EG attack",
+			"abbr": "AEAt",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 47,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "Amp EG decay",
+			"abbr": "AEDe",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 48,
+			"nr2": 0,
+			"value_labels": []
+		}
+	],
+	"script": null
+}

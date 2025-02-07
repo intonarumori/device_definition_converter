@@ -1,1 +1,196 @@
-{"id":"make_noise_0_coast","name":"0-Coast","abbr":"MN0-","manufacturer":"Make Noise","parameters":[{"type":"cc","name":"Arpeggiator switch","abbr":"ArSw","minimum":0,"maximum":127,"default_value":0,"nr1":117,"nr2":0,"value_labels":[]},{"type":"cc","name":"Arpeggiator type","abbr":"ArTy","minimum":0,"maximum":127,"default_value":0,"nr1":119,"nr2":0,"value_labels":[]},{"type":"cc","name":"Legato switch","abbr":"LgSw","minimum":0,"maximum":127,"default_value":0,"nr1":118,"nr2":0,"value_labels":[]},{"type":"cc","name":"MIDI A channel","abbr":"MACh","minimum":0,"maximum":127,"default_value":0,"nr1":102,"nr2":0,"value_labels":[]},{"type":"cc","name":"MIDI B channel","abbr":"MBCh","minimum":0,"maximum":127,"default_value":0,"nr1":103,"nr2":0,"value_labels":[]},{"type":"cc","name":"MIDI channel A CV","abbr":"MCAC","minimum":0,"maximum":127,"default_value":0,"nr1":104,"nr2":0,"value_labels":[]},{"type":"cc","name":"MIDI channel B CV","abbr":"MCBC","minimum":0,"maximum":127,"default_value":0,"nr1":105,"nr2":0,"value_labels":[]},{"type":"cc","name":"MIDI channel A gate","abbr":"MCAG","minimum":0,"maximum":127,"default_value":0,"nr1":106,"nr2":0,"value_labels":[]},{"type":"cc","name":"MIDI channel B gate","abbr":"MCBG","minimum":0,"maximum":127,"default_value":0,"nr1":107,"nr2":0,"value_labels":[]},{"type":"cc","name":"Pitch bend scale A","abbr":"PBSA","minimum":0,"maximum":127,"default_value":0,"nr1":108,"nr2":0,"value_labels":[]},{"type":"cc","name":"Pitch bend scale B","abbr":"PBSB","minimum":0,"maximum":127,"default_value":0,"nr1":109,"nr2":0,"value_labels":[]},{"type":"cc","name":"Aftertouch scale A","abbr":"ASA","minimum":0,"maximum":127,"default_value":0,"nr1":110,"nr2":0,"value_labels":[]},{"type":"cc","name":"Aftertouch scale B","abbr":"ASB","minimum":0,"maximum":127,"default_value":0,"nr1":111,"nr2":0,"value_labels":[]},{"type":"cc","name":"Velocity scale A","abbr":"VSA","minimum":0,"maximum":127,"default_value":0,"nr1":112,"nr2":0,"value_labels":[]},{"type":"cc","name":"Velocity scale B","abbr":"VSB","minimum":0,"maximum":127,"default_value":0,"nr1":113,"nr2":0,"value_labels":[]},{"type":"cc","name":"MIDI block switch","abbr":"MBSw","minimum":0,"maximum":127,"default_value":0,"nr1":114,"nr2":0,"value_labels":[]},{"type":"cc","name":"Tempo in divisor","abbr":"TIDv","minimum":0,"maximum":127,"default_value":0,"nr1":116,"nr2":0,"value_labels":[]}],"script":null}
+{
+	"id": "make_noise_0_coast",
+	"name": "0-Coast",
+	"abbr": "Mn0-",
+	"manufacturer": "Make Noise",
+	"parameters": [
+		{
+			"type": "cc",
+			"name": "Arpeggiator switch",
+			"abbr": "ArSw",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 117,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "Arpeggiator type",
+			"abbr": "ArTy",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 119,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "Legato switch",
+			"abbr": "LgSw",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 118,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "MIDI A channel",
+			"abbr": "MACh",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 102,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "MIDI B channel",
+			"abbr": "MBCh",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 103,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "MIDI channel A CV",
+			"abbr": "MCAC",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 104,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "MIDI channel B CV",
+			"abbr": "MCBC",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 105,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "MIDI channel A gate",
+			"abbr": "MCAG",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 106,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "MIDI channel B gate",
+			"abbr": "MCBG",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 107,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "Pitch bend scale A",
+			"abbr": "PBSA",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 108,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "Pitch bend scale B",
+			"abbr": "PBSB",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 109,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "Aftertouch scale A",
+			"abbr": "ASA",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 110,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "Aftertouch scale B",
+			"abbr": "ASB",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 111,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "Velocity scale A",
+			"abbr": "VSA",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 112,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "Velocity scale B",
+			"abbr": "VSB",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 113,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "MIDI block switch",
+			"abbr": "MBSw",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 114,
+			"nr2": 0,
+			"value_labels": []
+		},
+		{
+			"type": "cc",
+			"name": "Tempo in divisor",
+			"abbr": "TIDi",
+			"minimum": 0,
+			"maximum": 127,
+			"default_value": 0,
+			"nr1": 116,
+			"nr2": 0,
+			"value_labels": []
+		}
+	],
+	"script": null
+}

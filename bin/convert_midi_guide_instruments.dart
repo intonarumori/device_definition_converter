@@ -65,7 +65,9 @@ Future<DeviceEntry> _convertDevice(String input, String output) async {
   final map = DeviceDefinitionSerializer.toMap(deviceDefinition);
   final filename = '${deviceDefinition.id}.json';
   final outputPath = '$output/$filename';
-  await File(outputPath).writeAsString(jsonEncode(map));
+  var encoder = JsonEncoder.withIndent('\t');
+  String prettyJson = encoder.convert(map);
+  await File(outputPath).writeAsString(prettyJson);
 
   return DeviceEntry(
     manufacturer: deviceDefinition.manufacturer,

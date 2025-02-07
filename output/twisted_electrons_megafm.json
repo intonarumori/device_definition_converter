@@ -1,1 +1,20 @@
-{"id":"twisted_electrons_megafm","name":"MEGAfm","abbr":"TEMg","manufacturer":"Twisted Electrons","parameters":[{"type":"cc","name":"FM algorithm","abbr":"FmAl","minimum":1,"maximum":8,"default_value":0,"nr1":4,"nr2":0,"value_labels":[]}],"script":null}
+{
+	"id": "twisted_electrons_megafm",
+	"name": "MEGAfm",
+	"abbr": "TEMe",
+	"manufacturer": "Twisted Electrons",
+	"parameters": [
+		{
+			"type": "cc",
+			"name": "FM algorithm",
+			"abbr": "FmAl",
+			"minimum": 1,
+			"maximum": 8,
+			"default_value": 0,
+			"nr1": 4,
+			"nr2": 0,
+			"value_labels": []
+		}
+	],
+	"script": null
+}

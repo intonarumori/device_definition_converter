@@ -30,32 +30,40 @@ class Naming {
       final first = parts[0];
       final second = parts[1];
       final third = parts[2];
-      return getInitial(first) + getInitial(second) + _abbreviatedName(third, limit: 2);
+      return _abbreviatedName(first, limit: 1, enableWovelless: false) +
+          _abbreviatedName(second, limit: 1, enableWovelless: false) +
+          _abbreviatedName(third, limit: 2, enableWovelless: false);
     }
     if (parts.length >= 4) {
-      return getInitial(parts[0]) +
-          getInitial(parts[1]) +
-          getInitial(parts[2]) +
-          getInitial(parts[3]);
+      return _abbreviatedName(parts[0], limit: 1, enableWovelless: false) +
+          _abbreviatedName(parts[1], limit: 1, enableWovelless: false) +
+          _abbreviatedName(parts[2], limit: 1, enableWovelless: false) +
+          _abbreviatedName(parts[3], limit: 1, enableWovelless: false);
     }
     return '<no abbreviation>';
   }
 
-  static String _abbreviatedName(String name, {int limit = 2}) {
-    if (AbbreviationLookup.map.containsKey(name)) {
-      return limited(AbbreviationLookup.map[name]!, limit);
+  static String _abbreviatedName(String name, {int limit = 2, bool enableWovelless = true}) {
+    final key = name.toLowerCase();
+    if (AbbreviationLookup.map.containsKey(key)) {
+      return truncate(AbbreviationLookup.map[key]!, limit);
     }
-    if (name.length <= limit) {
-      return name;
+
+    String converted = name;
+
+    if (converted.length <= limit) {
+      return converted;
     }
-    final vowelless = getVowelless(name);
-    if (vowelless.length <= limit) {
-      return vowelless;
+    if (enableWovelless) {
+      converted = getVowelless(converted);
+      if (converted.length <= limit) {
+        return converted;
+      }
     }
-    return limited(vowelless, limit);
+    return truncate(converted, limit);
   }
 
-  static String limited(String name, int limit) {
+  static String truncate(String name, int limit) {
     if (name.length < limit) {
       return name;
     }
@@ -71,11 +79,6 @@ class Naming {
     if (name.isEmpty) return '';
     // Keep the first letter if it's a vowel
     return name[0] + name.substring(1).replaceAll(RegExp(r'[aeiouAEIOU]'), '');
-  }
-
-  static String getInitial(String name) {
-    if (name.isEmpty) return '';
-    return name[0].toUpperCase();
   }
 
   static List<String> extractNameParts(String name) {
