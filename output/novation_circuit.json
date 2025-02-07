@@ -29,7 +29,7 @@
 		{
 			"type": "cc",
 			"name": "Pre-Glide",
-			"abbr": "Pr-g",
+			"abbr": "Prgl",
 			"minimum": 52,
 			"maximum": 76,
 			"default_value": 0,

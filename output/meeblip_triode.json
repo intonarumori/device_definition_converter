@@ -172,7 +172,7 @@
 		{
 			"type": "cc",
 			"name": "Sub-oscillator",
-			"abbr": "Sb-s",
+			"abbr": "Sbsc",
 			"minimum": 0,
 			"maximum": 127,
 			"default_value": 0,

@@ -54,12 +54,20 @@ class Naming {
     if (converted.length <= limit) {
       return converted;
     }
+
+    converted = converted.replaceAll('-', ''); // Remove all hyphens
+
+    if (converted.length <= limit) {
+      return converted;
+    }
+
     if (enableWovelless) {
       converted = getVowelless(converted);
       if (converted.length <= limit) {
         return converted;
       }
     }
+
     return truncate(converted, limit);
   }
 

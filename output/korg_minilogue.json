@@ -139,7 +139,7 @@
 		{
 			"type": "cc",
 			"name": "Delay hi-pass",
-			"abbr": "DlH-",
+			"abbr": "DlHp",
 			"minimum": 0,
 			"maximum": 127,
 			"default_value": 0,

@@ -40,7 +40,7 @@
 		{
 			"type": "cc",
 			"name": "Select 1-2",
-			"abbr": "Sl1-",
+			"abbr": "Sl12",
 			"minimum": 0,
 			"maximum": 127,
 			"default_value": 0,
@@ -73,7 +73,7 @@
 		{
 			"type": "cc",
 			"name": "Level 1-2",
-			"abbr": "Lv1-",
+			"abbr": "Lv12",
 			"minimum": 0,
 			"maximum": 127,
 			"default_value": 0,
@@ -106,7 +106,7 @@
 		{
 			"type": "cc",
 			"name": "EG attack 1-2",
-			"abbr": "EA1-",
+			"abbr": "EA12",
 			"minimum": 0,
 			"maximum": 127,
 			"default_value": 0,
@@ -139,7 +139,7 @@
 		{
 			"type": "cc",
 			"name": "EG release 1-2",
-			"abbr": "ER1-",
+			"abbr": "ER12",
 			"minimum": 0,
 			"maximum": 127,
 			"default_value": 0,
@@ -172,7 +172,7 @@
 		{
 			"type": "cc",
 			"name": "Pitch 1-2",
-			"abbr": "Pt1-",
+			"abbr": "Pt12",
 			"minimum": 0,
 			"maximum": 127,
 			"default_value": 0,
@@ -205,7 +205,7 @@
 		{
 			"type": "cc",
 			"name": "Mod amount 1-2",
-			"abbr": "MA1-",
+			"abbr": "MA12",
 			"minimum": 0,
 			"maximum": 127,
 			"default_value": 0,
@@ -238,7 +238,7 @@
 		{
 			"type": "cc",
 			"name": "Mod rate 1-2",
-			"abbr": "MR1-",
+			"abbr": "MR12",
 			"minimum": 0,
 			"maximum": 127,
 			"default_value": 0,
