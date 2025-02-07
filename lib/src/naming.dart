@@ -19,18 +19,18 @@ class Naming {
     if (parts.isEmpty) return '';
     if (parts.length == 1) {
       final name = parts.first;
-      return abbreviatedName(name, limit: 4);
+      return _abbreviatedName(name, limit: 4);
     }
     if (parts.length == 2) {
       final first = parts.first;
       final second = parts.last;
-      return abbreviatedName(first, limit: 2) + abbreviatedName(second, limit: 2);
+      return _abbreviatedName(first, limit: 2) + _abbreviatedName(second, limit: 2);
     }
     if (parts.length == 3) {
       final first = parts[0];
       final second = parts[1];
       final third = parts[2];
-      return getInitial(first) + getInitial(second) + abbreviatedName(third, limit: 2);
+      return getInitial(first) + getInitial(second) + _abbreviatedName(third, limit: 2);
     }
     if (parts.length >= 4) {
       return getInitial(parts[0]) +
@@ -41,7 +41,7 @@ class Naming {
     return '<no abbreviation>';
   }
 
-  static String abbreviatedName(String name, {int limit = 2}) {
+  static String _abbreviatedName(String name, {int limit = 2}) {
     if (AbbreviationLookup.map.containsKey(name)) {
       return limited(AbbreviationLookup.map[name]!, limit);
     }

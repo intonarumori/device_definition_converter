@@ -59,6 +59,8 @@ Future<DeviceEntry> _convertDevice(String input, String output) async {
     deviceName,
   );
 
+  print('Converted: $manufacturer $deviceName -> ${deviceDefinition.abbr}');
+
   // Write device
   final map = DeviceDefinitionSerializer.toMap(deviceDefinition);
   final filename = '${deviceDefinition.id}.json';
